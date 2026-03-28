@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digital Literacy Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Digital Literacy Training Portal</h1>
+</header>
+
+<nav>
+    <button onclick="showModule('computer')">Computer Basics</button>
+    <button onclick="showModule('internet')">Internet Basics</button>
+    <button onclick="showModule('safety')">Cyber Safety</button>
+</nav>
+
+<section id="content">
+    <h2>Welcome!</h2>
+    <p>Select a module to start learning.</p>
+</section>
+
+<section id="quiz">
+    <h2>Quick Quiz</h2>
+    <p id="question"></p>
+    <button onclick="checkAnswer(true)">True</button>
+    <button onclick="checkAnswer(false)">False</button>
+    <p id="result"></p>
+</section>
+
+<script src="script.js"></script>
+<script src="quiz.js"></script>
+
+</body>
+</html>
