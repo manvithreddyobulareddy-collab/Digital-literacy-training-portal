@@ -1,0 +1,14 @@
+let question = "Is sharing your password safe?";
+let correctAnswer = false;
+
+document.getElementById("question").innerText = question;
+
+function checkAnswer(answer) {
+    let result = document.getElementById("result");
+
+    if (answer === correctAnswer) {
+        result.innerText = "✅ Correct!";
+    } else {
+        result.innerText = "❌ Wrong!";
+    }
+}
