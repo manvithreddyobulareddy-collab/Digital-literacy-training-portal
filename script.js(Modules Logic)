@@ -1,0 +1,13 @@
+function showModule(module) {
+    let content = document.getElementById("content");
+
+    if (module === "computer") {
+        content.innerHTML = "<h2>Computer Basics</h2><p>A computer is an electronic device used to process data.</p>";
+    }
+    else if (module === "internet") {
+        content.innerHTML = "<h2>Internet Basics</h2><p>The internet connects millions of computers worldwide.</p>";
+    }
+    else if (module === "safety") {
+        content.innerHTML = "<h2>Cyber Safety</h2><p>Never share your passwords with anyone.</p>";
+    }
+}
